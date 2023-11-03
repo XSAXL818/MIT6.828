@@ -124,7 +124,6 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 		case '7':
 		case '8':
 		case '9':
-		    interesting;
 			for (precision = 0; ; ++fmt) {
 				precision = precision * 10 + ch - '0';
 				ch = *fmt;
